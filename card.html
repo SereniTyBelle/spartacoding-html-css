@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday to You</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+   
+    <meta property="og:image" content="https://agiftidea.com/wp-content/uploads/2020/04/birthday-celebration.jpeg">
+    <meta property="og:description" content="Go check out my card!">
+    <meta property="og:title" content="Happy Birthday!">
+   
+    <link rel="shortcut icon" href="https://freepngimg.com/download/gift/22649-9-birthday-gift.png">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/confetti.js"></script>    
+   
+   <style>
+        * {
+            font-family: 'Yusei Magic', cursive;
+        }
+        body {
+            background-color: #e8344e;
+        }
+        .envelope {
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+        .letterclosed {
+            display: block;
+        }
+        .letteropen {
+            display: none;
+        }
+        .rtanny {
+            width: 200px;
+            height: 200px;
+            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/SpartaIcon8.gif');
+            background-size: cover;
+            background-position: center;
+            background-color: white;
+            margin: 100px auto 0px auto;
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .msgbox {
+            width: 400px;
+            margin: auto;
+            font-size: 20px;
+            line-height: 30px;
+            background-color: ivory;
+            color: brown;
+            padding: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+        @media screen and (max-width: 760px) {
+            .msgbox {
+                width: 300px;
+                font-size: 20px;
+                line-height: 30px;
+                padding: 20px;
+            }
+            .rtanny {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+    <script>
+        function openletter(){
+            document.getElementsByClassName("letterclosed")[0].style.display='none';         
+            document.getElementsByClassName("letteropen")[0].style.display='block';
+        }
+        function onlick_rtanny(){
+            alert('Yay!');
+            window.location.href='https://youtu.be/_z-1fTlSDF0';
+        }
+    </script>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/global/confetti.js"></script>
+</head>
+<body>
+    <div class="letterclosed" onclick="openletter()">
+        <div class="envelope"></div>
+        <h2 class="envelope-msg">Please click this envelope</h2>
+    </div>
+    <div class="letteropen">
+        <div class="rtanny" onclick="onclick_rtanny()">
+        <h1>Congratulations!</h1>
+        <div class="msgbox">
+        Happy birthday to you</br>
+        Love you</div>
+    </div>
+</body>
+</html>
